@@ -1,0 +1,23 @@
+{
+    "name": "thien/cse485_btth03_2023",
+    "autoload": {
+      "psr-4": {
+        "Thien\\Cse485Btth032023\\": "src/",
+        "App\\": "src/"
+      }
+    },
+    "authors": [
+        {
+            "name": "thien35",
+            "email": "thiennbnk@gmail.com"
+        }
+    ],
+  "require": {
+    "phpunit/phpunit": "^9.5",
+    "phpmailer/phpmailer": "^6.8",
+        "twig/twig": "^3.5",
+        "symfony/routing": "^6.2",
+        "symfony/http-foundation": "^6.2",
+        "nikic/fast-route": "^1.3"
+  }
+}
