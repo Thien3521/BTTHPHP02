@@ -20,7 +20,7 @@ use Twig\Loader\FilesystemLoader;
 //             header('Location: index.php');
 //             exit;
 //         }
-//         echo $twig->render('add.twig');
+//         echo $twig->render('add_article.twig');
 //         break;
 //     case 'edit':
 //         $id = $_GET['id'];
@@ -35,7 +35,7 @@ use Twig\Loader\FilesystemLoader;
 //             header('Location: index.php');
 //             exit;
 //         }
-//         echo $twig->render('edit.twig', ['user' => $user]);
+//         echo $twig->render('edit_article.twig', ['user' => $user]);
 //         break;
 //     case 'delete':
 //         $id = $_GET['id'];
@@ -77,7 +77,7 @@ switch ($action) {
             header('Location: index.php');
             exit;
         }
-        echo $twig->render('add.twig');
+        echo $twig->render('add_article.twig');
         break;
     case 'edit':
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -109,7 +109,7 @@ switch ($action) {
             $baiviet = $stmt->fetch(PDO::FETCH_ASSOC);
 
             // Render the edit page with the retrieved data
-            echo $twig->render('edit.twig', ['baiviet' => $baiviet]);
+            echo $twig->render('edit_article.twig', ['baiviet' => $baiviet]);
             break;
         }
 
