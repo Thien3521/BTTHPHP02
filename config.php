@@ -1,7 +1,7 @@
 <?php
 use Twig\Loader\FilesystemLoader;
 $db_host = 'localhost';
-$db_name = 'demo_bt2';
+$db_name = 'btth01_cse485';
 $db_user = 'root';
 $db_pass = '';
 
