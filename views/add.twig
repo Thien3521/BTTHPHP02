@@ -1,12 +1,41 @@
 {% extends 'layout.twig' %}
 
 {% block content %}
-    <h2>Add User</h2>
-    <form method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-        <input type="submit" value="Add User">
-    </form>
+    <h1>Thêm bài viết</h1>
+    <form method="post">
+        <div>
+            <label for="tieude">Tiêu đề:</label>
+            <input type="text" id="tieude" name="tieude">
+        </div>
+        <div>
+            <label for="ten_bhat">Tên bài hát:</label>
+            <input type="text" id="ten_bhat" name="ten_bhat">
+        </div>
+        <div>
+            <label for="ma_tloai">Mã thể loại:</label>
+            <input type="text" id="ma_tloai" name="ma_tloai">
+        </div>
+        <div>
+            <label for="tomtat">Tóm tắt:</label>
+            <textarea id="tomtat" name="tomtat"></textarea>
+        </div>
+        <div>
+            <label for="noidung">Nội dung:</label>
+            <textarea id="noidung" name="noidung"></textarea>
+        </div>
+        <div>
+            <label for="ma_tgia">Mã tác giả:</label>
+            <input type="text" id="ma_tgia" name="ma_tgia">
+        </div>
+        <div class="form-group">
+            <label for="ngayviet">Ngày viết:</label>
+            <input type="date" class="form-control" id="ngayviet" name="ngayviet" required>
+        </div>
+            <div class="form-group">
+            <label for="hinhanh">Hình ảnh</label>
+            <input type="text" class="form-control" id="hinhanh" name="hinhanh">
+        </div>
+            <button type="submit" class="btn btn-primary">Thêm bài viết</button>
+  </form>
 {% endblock %}
+
